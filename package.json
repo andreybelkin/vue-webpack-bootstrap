@@ -5,7 +5,8 @@
   "scripts": {
     "build": "webpack --config build/webpack.config.dev.js",
     "dev": "webpack-dev-server --config build/webpack.config.dev.js",
-	"lint": "eslint --ext .js,.vue src"
+    "lint": "eslint --ext .js,.vue src",
+    "lint:fix": "eslint --ext .js,.vue src --fix"
   },
   "repository": {
     "type": "git",
