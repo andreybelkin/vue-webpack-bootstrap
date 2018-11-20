@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/abelkin/smsred.git"
+    "url": "git+https://github.com/andreybelkin/webpack-bootstrap-vue.git"
   },
   "author": "Andrey Belkin <andrew.belkin@gmail.com>",
   "dependencies": {
@@ -22,6 +22,7 @@
     "babel-eslint": "^10.0.1",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
+    "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^1.0.1",
     "eslint": "^5.9.0",
     "eslint-config-standard": "^12.0.0",
