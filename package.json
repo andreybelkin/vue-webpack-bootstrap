@@ -16,6 +16,7 @@
   "author": "Andrey Belkin <andrew.belkin@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^4.1.3",
     "bootstrap-vue": "^2.0.0-rc.11",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1"
