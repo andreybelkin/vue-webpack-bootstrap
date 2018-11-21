@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Webpack Bootstrap Vue",
   "scripts": {
-    "build": "webpack --config build/webpack.config.dev.js",
     "dev": "webpack-dev-server --config build/webpack.config.dev.js",
+    "prod": "webpack --config build/webpack.config.prod.js",
     "lint": "eslint --ext .js,.vue src",
     "lint:fix": "eslint --ext .js,.vue src --fix",
     "test": "jest"
@@ -14,6 +14,7 @@
     "url": "git+https://github.com/andreybelkin/webpack-bootstrap-vue.git"
   },
   "author": "Andrey Belkin <andrew.belkin@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "vue": "^2.5.17",
     "vue-router": "^3.0.1"
@@ -38,15 +39,22 @@
     "html-webpack-plugin": "^3.2.0",
     "jest": "^23.6.0",
     "jest-serializer-vue": "^2.0.2",
+    "mini-css-extract-plugin": "^0.4.4",
     "vue-jest": "^3.0.0",
     "vue-loader": "^15.4.2",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.5.17",
     "webpack": "^4.26.0",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.4"
   },
   "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,vue}"
+    ],
+    "coverageDirectory": ".jest_coverage",
     "moduleFileExtensions": [
       "js",
       "vue"
@@ -55,8 +63,8 @@
       "^@/(.*)$": "<rootDir>/src/$1"
     },
     "transform": {
-      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
-      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.vue$": "vue-jest"
     },
     "snapshotSerializers": [
       "<rootDir>/node_modules/jest-serializer-vue"
