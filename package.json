@@ -1,7 +1,7 @@
 {
-  "name": "webpack-bootstrap-vue",
+  "name": "vue-webpack-bootstrap-vuex",
   "version": "1.0.0",
-  "description": "Webpack Bootstrap Vue",
+  "description": "Vue Webpack Bootstrap Vuex Template",
   "scripts": {
     "dev": "webpack-dev-server --config build/webpack.config.dev.js",
     "prod": "webpack --config build/webpack.config.prod.js",
@@ -11,11 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andreybelkin/webpack-bootstrap-vue.git"
+    "url": "git+https://github.com/andreybelkin/vue-webpack-bootstrap-vuex.git"
   },
   "author": "Andrey Belkin <andrew.belkin@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "bootstrap-vue": "^2.0.0-rc.11",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1"
   },
