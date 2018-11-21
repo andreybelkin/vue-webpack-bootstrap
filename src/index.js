@@ -5,6 +5,7 @@ import BootstrapVue from 'bootstrap-vue'
 import VTooltip from 'v-tooltip'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'es6-promise/auto'
 
 Vue.use(BootstrapVue)
 Vue.use(VTooltip)
