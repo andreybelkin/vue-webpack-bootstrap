@@ -6,9 +6,12 @@ import VTooltip from 'v-tooltip'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'es6-promise/auto'
+import VueRouter from 'vue-router'
 
+// plugin setup
 Vue.use(BootstrapVue)
 Vue.use(VTooltip)
+Vue.use(VueRouter)
 
 /* eslint-disable-next-line no-new */
 new Vue({
